@@ -21,13 +21,13 @@ operation ={
     "/" :divide
 }
 def calculator():
-    num1=int(input("Enter the first number:\n"))
+    num1=float(input("Enter the first number:\n"))
     for i in operation:
        print(i)
     cont=True    
     while cont:
         op=input("which operation? ")
-        num2=int(input("enter number 2:\n"))
+        num2=float(input("enter number 2:\n"))
 
         calcfun=operation[op]
         ans=calcfun(num1,num2)
@@ -36,7 +36,7 @@ def calculator():
         if input(f"Type 'y' to continue calculating with {ans}, or type 'n' to start a new calculation: ") == 'y':
             num1=ans
         else:
-            # os.system('cls')
+            os.system('cls')
             calculator()
             cont=False
 

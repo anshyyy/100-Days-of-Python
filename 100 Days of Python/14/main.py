@@ -3,7 +3,6 @@ import os
 from datamy import data
 import art
 
-b=random.randint(0,len(data)-1)
 
 print(art.logo)
 
@@ -11,7 +10,7 @@ def game():
 
     point=0
     while(True):
-        a=b
+        a=random.randint(0,len(data)-1)
         b=random.randint(0,len(data)-1)
         # while(a==b):
         #     b=random.randint(0,len(data)-1)

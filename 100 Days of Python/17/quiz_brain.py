@@ -9,6 +9,7 @@ class Quiz:
         self.ques_no += 1
         user_ans = input(f"Q.{self.ques_no}: {curr_ques.text} (True/False) ")
         self.check_ans(user_ans, curr_ques.answer)
+
     def still_has_question(self):
         return self.ques_no < len(self.question_list)
 
